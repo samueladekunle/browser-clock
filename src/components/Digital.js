@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CurrentTime from "../CurrenTime.js";
+import CurrentTime from "../CurrentTime.js";
 
 class Digital extends Component {
     constructor( props ) {
