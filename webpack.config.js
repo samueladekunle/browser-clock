@@ -4,9 +4,10 @@ const view = path.resolve(__dirname, "public");
 const assets = path.resolve(__dirname, "assets");
 
 module.exports = {
+    "mode": "development",
     entry: path.join(src, "App.js"),
     output: {
-        path: path.join(assets, "js/"),
+        path: path.join(assets, "js"),
         filename: "index.js"
     },
     devServer: {
@@ -14,8 +15,8 @@ module.exports = {
         port: process.env.PORT || 9000
     },
     module: {
-        loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+        rules: [
+            { test: /\.js$/, exclude: /node_modules/, use: { loader: "babel-loader", options: { presets: [ "react", "env" ] } } }
         ]
     }
 };
