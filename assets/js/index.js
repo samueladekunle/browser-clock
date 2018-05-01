@@ -347,6 +347,17 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 
 /***/ }),
 
+/***/ "./src/components/Analog.js":
+/*!**********************************!*\
+  !*** ./src/components/Analog.js ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("throw new Error(\"Module build failed: SyntaxError: E:/JavaScript/react/browser-clock/src/components/Analog.js: getter should have no params (17:4)\\n\\n\\u001b[0m \\u001b[90m 15 | \\u001b[39m        \\u001b[36mthis\\u001b[39m\\u001b[33m.\\u001b[39mupdateTime()\\u001b[33m;\\u001b[39m\\n \\u001b[90m 16 | \\u001b[39m    }\\n\\u001b[31m\\u001b[1m>\\u001b[22m\\u001b[39m\\u001b[90m 17 | \\u001b[39m    get toDegree( value\\u001b[33m,\\u001b[39m divisor \\u001b[33m=\\u001b[39m \\u001b[35m60\\u001b[39m ) {\\n \\u001b[90m    | \\u001b[39m    \\u001b[31m\\u001b[1m^\\u001b[22m\\u001b[39m\\n \\u001b[90m 18 | \\u001b[39m        \\u001b[36mreturn\\u001b[39m ( value \\u001b[33m/\\u001b[39m divisor ) \\u001b[33m*\\u001b[39m \\u001b[35m360\\u001b[39m \\u001b[33m-\\u001b[39m \\u001b[35m90\\u001b[39m\\u001b[33m;\\u001b[39m\\n \\u001b[90m 19 | \\u001b[39m    }\\n \\u001b[90m 20 | \\u001b[39m    updateTime() {\\u001b[0m\\n\");\n\n//# sourceURL=webpack:///./src/components/Analog.js?");
+
+/***/ }),
+
 /***/ "./src/components/Clock.js":
 /*!*********************************!*\
   !*** ./src/components/Clock.js ***!
@@ -355,7 +366,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Digital = __webpack_require__(/*! ./Digital.js */ \"./src/components/Digital.js\");\n\nvar _Digital2 = _interopRequireDefault(_Digital);\n\nvar _styles = __webpack_require__(/*! ../styles/styles.js */ \"./src/styles/styles.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Clock = function Clock(props) {\n    return _react2.default.createElement(\n        \"div\",\n        { style: _styles.app },\n        _react2.default.createElement(_Digital2.default, null),\n        \">\"\n    );\n};\n\nexports.default = Clock;\n\n//# sourceURL=webpack:///./src/components/Clock.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _Analog = __webpack_require__(/*! ./Analog */ \"./src/components/Analog.js\");\n\nvar _Analog2 = _interopRequireDefault(_Analog);\n\nvar _Digital = __webpack_require__(/*! ./Digital */ \"./src/components/Digital.js\");\n\nvar _Digital2 = _interopRequireDefault(_Digital);\n\nvar _styles = __webpack_require__(/*! ../styles/styles */ \"./src/styles/styles.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Clock = function Clock(props) {\n    return _react2.default.createElement(\n        \"div\",\n        { style: _styles.app },\n        _react2.default.createElement(_Digital2.default, null),\n        \">\"\n    );\n};\n\nexports.default = Clock;\n\n//# sourceURL=webpack:///./src/components/Clock.js?");
 
 /***/ }),
 
