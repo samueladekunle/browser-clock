@@ -3,3 +3,5 @@ class CurrentTime {
         return ( new Date() ).toLocaleString();
     }
 }
+
+export default CurrentTime;
