@@ -331,7 +331,31 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Hello = function Hello(props) {\n  return _react2.default.createElement(\n    \"p\",\n    null,\n    \"Hello!\"\n  );\n};\n\n(0, _reactDom.render)(_react2.default.createElement(Hello, null), document.querySelector(\"#app\"));\n\n//# sourceURL=webpack:///./src/App.js?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _Clock = __webpack_require__(/*! ./components/Clock.js */ \"./src/components/Clock.js\");\n\nvar _Clock2 = _interopRequireDefault(_Clock);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar node = document.querySelector(\"#app\");\n(0, _reactDom.render)(_react2.default.createElement(_Clock2.default, null), node);\n\n//# sourceURL=webpack:///./src/App.js?");
+
+/***/ }),
+
+/***/ "./src/components/Clock.js":
+/*!*********************************!*\
+  !*** ./src/components/Clock.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _styles = __webpack_require__(/*! ../styles/styles.js */ \"./src/styles/styles.js\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar Clock = function Clock(props) {\n    return _react2.default.createElement(\n        \"div\",\n        { style: _styles.app },\n        _react2.default.createElement(\"div\", { style: _styles.dial })\n    );\n};\n\nexports.default = Clock;\n\n//# sourceURL=webpack:///./src/components/Clock.js?");
+
+/***/ }),
+
+/***/ "./src/styles/styles.js":
+/*!******************************!*\
+  !*** ./src/styles/styles.js ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nvar styles = {\n    app: {\n        position: \"relative\",\n        top: 0,\n        left: 0,\n        width: 200,\n        height: 200\n    },\n    dial: {\n        position: \"relative\",\n        top: \"inherit\",\n        left: \"inherit\",\n        width: \"inherit\",\n        height: \"inherit\",\n        borderRadius: 2000,\n        border: \"1px solid black\"\n    },\n    secondHand: _defineProperty({\n        position: \"relative\",\n        top: 100,\n        left: 100,\n        width: \"40%\",\n        height: 1,\n        transformOrigin: \"0% 0%\",\n        backgroundColor: \"grey\",\n        border: \"1px solid grey\"\n    }, \"backgroundColor\", \"red\"),\n    minuteHand: {\n        position: \"relative\",\n        top: 100,\n        left: 1000,\n        width: \"40%\",\n        height: 3,\n        transformOrigin: \"0% 0%\",\n        backgroundColor: \"grey\",\n        border: \"1px solid grey\"\n    },\n    hourHand: {\n        position: \"relative\",\n        top: 100,\n        left: 100,\n        width: \"20%\",\n        height: 7,\n        transformOrigin: \"0% 0%\",\n        backgroundColor: \"black\",\n        border: \"1px solid black\"\n    }\n};\n\nexports.default = styles;\n\n//# sourceURL=webpack:///./src/styles/styles.js?");
 
 /***/ })
 

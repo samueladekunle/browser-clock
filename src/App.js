@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {render} from "react-dom";
+import Clock from "./components/Clock.js";
 
-const Hello = props => <p>Hello!</p>;
-
-render(<Hello/>, document.querySelector("#app"));
+const node = document.querySelector("#app");
+render(<Clock />, node);
