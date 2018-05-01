@@ -6,12 +6,12 @@ class Digital extends Component {
         super( props );
         this.updateTime = this.updateTime.bind(this);
         this.state = {
-            currentTime: CurrentTime
+            currentTime: CurrentTime.currentTime
         };
         this.updateTime();
     }
     updateTime() {
-        setInterval( () => this.setState( { currentTime: CurrentTime } ), 1000 );
+        setInterval( () => this.setState( { currentTime: CurrentTime.currentTime } ), 1000 );
     }
     render() {
         return <div>{ this.state.currentTime }</div>;
