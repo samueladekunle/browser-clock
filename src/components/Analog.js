@@ -22,8 +22,7 @@ class Analog extends Component {
     }
     render() {
         return (
-            <div>
-                <div style={ dialStyle }></div>
+            <div style={ dialStyle }>
                 <div style={ secondHandStyle }></div>
                 <div style={ minuteHandStyle }></div>
                 <div style={ hourHandStyle }></div>
