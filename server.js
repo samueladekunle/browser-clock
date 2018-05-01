@@ -3,8 +3,8 @@ const path = require("path");
 
 const app = express();
 
-const assets = path.join(__dirname, "../assets");
-const view = path.join(__dirname, "../public");
+const assets = path.join(__dirname, "assets");
+const view = path.join(__dirname, "public");
 
 app.use(express.static(assets));
 app.use(express.static(view));
