@@ -1,1 +1,5 @@
-export default ( new Date() ).toLocaleString();
+class CurrentTime {
+    static get currentTime() {
+        return ( new Date() ).toLocaleString();
+    }
+}
