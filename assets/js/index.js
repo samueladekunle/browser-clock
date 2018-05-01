@@ -343,7 +343,7 @@ eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/i
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nexports.default = function () {\n  return new Date().toLocaleString();\n};\n\n//# sourceURL=webpack:///./src/CurrentTime.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = new Date().toLocaleString();\n\n//# sourceURL=webpack:///./src/CurrentTime.js?");
 
 /***/ }),
 

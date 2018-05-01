@@ -1,1 +1,1 @@
-export default () => ( (new Date()).toLocaleString() );
+export default ( new Date() ).toLocaleString();
