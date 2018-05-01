@@ -14,7 +14,7 @@ class Analog extends Component {
         hourHandStyle.transform = this.toDegree( currentTime, 12 );
         this.updateTime();
     }
-    get toDegree( value, divisor = 60 ) {
+    toDegree( value, divisor = 60 ) {
         return ( value / divisor ) * 360 - 90;
     }
     updateTime() {
