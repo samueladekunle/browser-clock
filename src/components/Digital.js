@@ -17,3 +17,5 @@ class Digital extends Component {
         return <div>{ this.state.currentTime }</div>;
     }
 }
+
+export default Digital;
