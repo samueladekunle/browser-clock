@@ -31,3 +31,5 @@ class Analog extends Component {
         );
     }
 }
+
+export default Analog;
