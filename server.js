@@ -11,5 +11,6 @@ app.use(express.static(view));
 
 const port = process.env.PORT || 9000;
 app.set("port", port);
+app.listen(app.get("port"), () => console.log(`Server running at port ${port}`));
 
 app.get("/", (req, res) => res.sendFile("index.html"));
