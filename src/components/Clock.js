@@ -6,3 +6,5 @@ const Clock = ( props ) => (
         <div style={ dialStyle }></div>
     </div>
 );
+
+export default Clock;
