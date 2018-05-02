@@ -33,7 +33,7 @@ const secondHand = {
 const minuteHand = {
     position: "relative",
     top: 100,
-    left: 1000,
+    left: 100,
     width: "40%",
     height: 3,
     transformOrigin: "0% 0%",
