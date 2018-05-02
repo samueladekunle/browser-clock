@@ -11,3 +11,6 @@ $ npm start
 ```
 
 Point your browser to http://localhost:9000
+
+## License
+This application is available as open source, and is distributed under the terms of the [ISC](License) license.
