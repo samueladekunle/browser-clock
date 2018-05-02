@@ -1,3 +1,4 @@
+// Style rule for the Clock app.
 const app = {
     position: "relative",
     top: 0,
@@ -8,6 +9,7 @@ const app = {
     textAlign: "center"
 };
 
+// Style rule for the dial.
 const dial = {
     position: "relative",
     top: "inherit",
@@ -18,6 +20,7 @@ const dial = {
     border: "1px solid black"
 };
 
+// Style rule for the hand that reads the seconds.
 const secondHand = {
     position: "relative",
     top: 100,
@@ -30,6 +33,7 @@ const secondHand = {
     backgroundColor: "red"
 };
 
+// Style rule for the hand that reads the minutes.
 const minuteHand = {
     position: "relative",
     top: 100,
@@ -41,6 +45,7 @@ const minuteHand = {
     border: "1px solid grey"
 };
 
+// Style rule for the hand that reads the hours.
 const hourHand = {
     position: "relative",
     top: 100,
@@ -52,4 +57,5 @@ const hourHand = {
     border: "1px solid black"
 };
 
+// Export the app, dial, secondHand, minuteHand, and hourHand style rules.
 export { app, dial, secondHand, minuteHand, hourHand };
